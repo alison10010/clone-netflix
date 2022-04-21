@@ -1,0 +1,141 @@
+/* VARIAVEIS USADAS NO PROJETO - INICIO */
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+/* VARIAVEIS USADAS NO PROJETO - FIM */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* MENU NO TOPO DA PAGE */
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO PRINCIPAL DA PAGE*/
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+/* LINK DOS MENUS DO TOPO */
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #FFF;
+}
+
+/* --------FIM DO CSS DO TOP -------------- */
+
+/* CAPA DO FILME EM DESTAQUE */
+.filme-destaque-1{ 
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(../img/era_do_gelo_capa.jpg);       
+}
+
+.filme-destaque-2{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(../img/sonic_capa.jpg); 
+}
+
+.filme-destaque-3{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(../img/morbius.jpg);   
+}
+
+.ajuste-destaque{
+    height: 400px;
+    font-size: 16px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* TITULO DA CAPA DE DESTAQUE */
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* TITULO DAS CATEGORIAS */
+.categoria{
+    margin-top: 1%;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #AAA;
+    font-family: 'Arial Black', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* BOTOES DA CAPA DE DESTAQUE */
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+/* TUDO QUE ESTÁ DENTRO DA CLASSE CONTAINER COM MARGEM */
+.container{
+    margin-left: 15px;
+}
+
+/* UM CONTAINER ESPECIFICO DA PAGE  */
+.filme-principal .container{
+    width: 70%;
+}
+
+/* TAMANHO DAS IMAGENS NO CARROSEL */
+.box-filme{
+    height: 250px;
+    width: 180px;
+    display: block;
+}
+
+/* ESPACO ENTRE A CAPA DE DESTAQUE E O CARROSEL DOS FILMES */
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+

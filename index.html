@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="css/respansive.css">
+    <link rel="stylesheet" type="text/css" href="css/respansive.css">   
+    
+    
+    <link rel="stylesheet" type="text/css" href="css-boot/bootstrap.min.css">
 
     <!-- Demo styles -->
     <style>
@@ -45,11 +48,11 @@
                   <h3 class="titulo">ERA DO GELO</h3>
                   <p class="descricao">Seis aventuras com Scrat, o esquilo-dente-de-sabre, se aventurando na paternidade.</p>
                   <div class="botoes">
-                      <button role="button" class="botao">
+                      <button role="button" class="botao" data-toggle="modal" data-target="#PlayEradoGelo">
                         <i class="fa-solid fa-play"></i>
                         Assistir Agora
                       </button>
-                      <button role="button" class="botao">
+                      <button role="button" class="botao" data-toggle="modal" data-target="#EradoGelo">
                         <i class="fa-solid fa-circle-info"></i>
                         Detalhes
                       </button>
@@ -64,11 +67,11 @@
                     <h3 class="titulo">Sonic: O Filme</h3>
                     <p class="descricao">Sonic, o ouriço azul mais veloz do mundo, vive isolado e sem amigos na Terra desde que precisou fugir de seu planeta natal.</p>
                     <div class="botoes">
-                        <button role="button" class="botao">
+                        <button role="button" class="botao" data-toggle="modal" data-target="#PlaySonic">
                           <i class="fa-solid fa-play"></i>
                           Assistir Agora
                         </button>
-                        <button role="button" class="botao">
+                        <button role="button" class="botao" data-toggle="modal" data-target="#Sonic">
                           <i class="fa-solid fa-circle-info"></i>
                             Detalhes
                         </button>
@@ -93,8 +96,8 @@
                       </button>
                   </div>
               </div>  
-            </div>
-        </div>
+          </div>
+          </div>
 
         </div>
         <div class="swiper-pagination"></div>
@@ -145,32 +148,112 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
+  
 
-    <!-- Swiper JS para o carrosel -->
-    <script src="js/swiper/swiper-bundle.min.js"></script>
+    <!-- MODAIS DA PAGE -->
 
-    <!-- Swiper JS para todos os carrosels das listas dos filmes -->
-    <script src="js/filmes-populares.js"></script>
+    <!-- Modal - sinopse Era do Gelo -->
+    <div class="modal fade" id="EradoGelo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sinopse</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="text-align: justify;line-height: 1.5;">
+            O mamute Manny, o tigre de dentes-de-sabre Diego e a preguiça-gigante Sid são amigos em uma época muito distante dos dias atuais. Até o dia em que eles encontram um menino esquimó totalmente sozinho, longe de seus pais, e decidem ajudá-lo a achar sua família.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- ICONS DOS BOTOES -->
-    <script src="https://kit.fontawesome.com/4ed72f0505.js" crossorigin="anonymous"></script>
+    <!-- Modal Play Era do Gelo -->
+    <div class="modal fade" id="PlayEradoGelo" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body play-video">
+            <div class="video-area" style="background-image: url(img/era_do_gelo_capa.jpg);">
+              <div class="video-play-btn">
+                  <a href="https://www.youtube.com/watch?v=GWNqwzTdGvU" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- JS do Swiper (slide) para inicializar -->
+    <!-- Modal - sinopse SONIC -->
+    <div class="modal fade" id="Sonic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sinopse</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="text-align: justify;line-height: 1.5;">
+            Depois de se estabelecer em Green Hills, Sonic está pronto para mais liberdade e deixar sua marca como um herói, e Tom e Maddie concordam em deixá-lo em casa enquanto vão de férias. Mas, assim que eles se foram, Dr. Robotnik volta, desta vez com um novo parceiro, Knuckles, em busca de uma esmeralda que tem o poder de construir e destruir civilizações. Sonic se une a um novo companheiro, Tails, e juntos eles embarcam em uma jornada para encontrar a esmeralda antes que ela caia nas mãos erradas.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Play SONIC -->
+    <div class="modal fade" id="PlaySonic" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body play-video">
+            <div class="video-area" style="background-image: url(img/sonic_capa.jpg);">
+              <div class="video-play-btn">
+                  <a href="https://www.youtube.com/watch?v=IrJeYZgzIqw" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAIS DA PAGE -FIM -->
+
+
+<!-- NECESSARIO PARA O MODAL -->
+<script src="js-boot/jquery-2.2.4.min.js"></script>
+<script src="js-boot/popper.min.js"></script>
+<script src="js-boot/bootstrap.min.js"></script>
+<!-- NECESSARIO PARA O MODAL -FIM -->
+
+<!-- Swiper JS para o carrosel -->
+<script src="js/swiper/swiper-bundle.min.js"></script>
+<script src="js/filmes-populares.js"></script>
+
+<!-- ICONS DOS BOTOES -->
+<script src="https://kit.fontawesome.com/4ed72f0505.js" crossorigin="anonymous"></script>
+
+<!-- JS do Swiper (slide) para inicializar -->
     
-    <script>
-      var swiper = new Swiper(".destaqueSlide", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 10500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: false,
-        },
-      });
-    </script>
+<script>
+  var swiper = new Swiper(".destaqueSlide", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 10500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+    },
+  });
+</script>
 
-  </body>
+</body>
 </html>
